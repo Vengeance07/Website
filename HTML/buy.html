@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<!-- It contains the feedback form for the user-->
+<html>
+	<head>
+		<!-- All the meta tag and title inside head tag -->
+		<title>Tech Buddy: Dell</title>
+		<link rel = "stylesheet" type = "text/css" href = "..\CSS\style.css">
+		<meta charset = "UTF-8">
+		<meta name = "description" content = "Selling smartphone and laptop">
+		<meta name = "keywords" content = "laptop,mobile,buy,computer,PC,device">
+		<meta name = "author" content = "Albert Shrestha">
+		<meta name = "viewport" content = "width=device-width, initial-scale = 1.0">
+		<script src = "..\JAVASCRIPT\buy.js"></script>
+	</head>
+	<body>
+		<div>
+			<!-- Creating a table with three columns to insert logo of a company,
+					its solgan and contacts-->
+			<table width = 100% >
+				<tr>
+					<th>
+						<img src = "..\IMAGES\techbuddy.png" style= "height : 170px; width : 170px; padding-top: 70px;">	
+					</th>
+					<th>
+						<div class = "title">
+							<p>
+								<h1> TECH BUDDY</h1>
+								<h3> Bringing you your true power</h3>
+							</p>
+						</div>
+					</th>
+					<th>
+						<p class = "us"> 
+							CONTACT: 9807162345<br>
+							E-Mail: techbuddy@gmail.com
+							
+						</p>
+					</th>
+				</tr>
+			</table>
+		</div>
+		<!-- nav tag indicates navigation bar of the web page using ul tag-->
+		<nav width = 100%>
+			<ul id = "bar" style = "margin: auto; padding-left: 100px;">
+				<!-- Home page of the website-->
+				<li><a href = "home.html">HOME</a></li>
+				<!-- All the links to smartphone are listed below -->
+				<li><a>SMARTPHONE</a>
+					<ul>
+						<li><a href = "samsung.html">Samsung</a></li>
+						<li><a href = "iphone.html">Iphone</a></li>
+						<li><a href = "one-plus.html">One plus</a></li>
+					</ul>
+				</li>
+				<!-- All the links to laptop are listed below -->
+				<li><a>LAPTOP</a>
+					<ul>
+						<li><a href = "dell.html">Dell</a></li>
+						<li><a href = "iMac.html">iMac</a></li>
+					</ul>
+				</li>
+				<!-- All the links to desktop are listed below -->
+				<li><a>DESKTOP</a>
+					<ul>
+						<li><a href = "acer.html">Acer</a></li>
+						<li><a href = "lenovo.html">Lenovo</a></li>
+					</ul>
+				</li>
+				<!-- About the company is described in the link-->
+				<li><a href = "about.html">ABOUT US</a>
+				</li>
+			</ul>
+		</nav>
+		<!-- Below section contains feedback form for the user-->
+		<section style = "padding-left: 200px;">
+			
+			<form name = "message" onsubmit = "buy()">
+				<fieldset>
+					<legend><h1>Buy</h1></legend>
+					<p>Name: <input type = "text" name = "name" placeholder = "Enter your name"></p>
+					<p>Email: <input type = "email" name = "email" placeholder = "Enter your E-mail"></p>
+					<p>Address: <input type = "text" name = "address" placeholder = "Enter your address"></p>
+					<p>Phone No: <input type = "text" name = "phone" placeholder = "Enter your number"></p>
+					<p>Message: <br/><textarea name = "message" rows = "10" cols = "40" placeholder = "For special condition or enquiry"></textarea></p>
+					<p style = "padding-left: 250px;" ><input type = "submit" value = "buy"></p>
+				</fieldset>
+			</form>
+		</section>
+		<!-- footer section contains the footer part of the company which includes
+				copyright, about company, products sold by the commpany--> 
+		<footer>
+			<table width = 80% align="center">
+				<tr>
+					<th>
+						<h2> Information </h2><hr/>
+						
+					</th>
+					<th>
+						<h2> Why Buy From Us</h2><hr/>
+						
+					</th>
+					<th>
+						<h2> Brands We Offer</h2><hr/>
+						
+					</th>
+				</tr>
+				<tr>
+					<td align = "center" valign="top">
+						<p> <a href = "about.html">About Us</a> <br> <a href = "form.html">Feedback</a><br> <a href = "address.html"> Location</a> </p>
+					</td>
+					<td align = "center" valign="top">
+						<p> Free Shipping <br> Affordable Price</p>
+					</td>
+					<td align = "center" valign="top">
+						<p> Apple <br> Samsung <br> Dell <br> One plus <br> Acer <br> Lenovo</p>
+					</td>
+				</tr>
+				
+			</table>
+			<p align="center"> &copy; Tech Buddy</p>
+		</footer>
+	</body>
+</html>
