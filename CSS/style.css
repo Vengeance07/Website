@@ -1,0 +1,147 @@
+body
+{	
+	background-image: url("../IMAGES/background.jpg");
+	background-size: cover;
+}
+a:hover
+{
+	color:#ff751a;
+} 
+a
+{
+	color: #1a1a1a;
+	padding: 10px;
+	text-decoration: none;
+	display: block;
+}
+.us
+{
+	float: center;
+	font-size: 13px;
+	background: 0;
+	text-align: center;
+}
+.title
+{
+	text-align: center;
+	font-family:sans-serif;
+	color: #ff3333;
+	float: center;
+}
+#current
+{
+	background-color: #cccccc;
+}
+#slider
+{
+	
+	margin: auto;
+	width: 1013px;
+	height: 530px;
+	overflow: hidden;
+	z-index: -99;
+}
+#slide
+{
+	position: relative;
+	width: 5787px;
+	animation: slidy 25s infinite;
+}
+#slide img
+{
+	float: left;
+}
+@keyframes slidy
+{
+	0%
+	{
+		left: 0px;
+	}
+	16%
+	{
+		left: 0px;
+	}
+	20%
+	{
+		left: -1013px;
+	}
+	36%
+	{
+		left: -1013px;
+	}
+	40%
+	{
+		left: -2213px;
+	}
+	56%
+	{
+		left: -2213px;
+	}
+	60%
+	{
+		left: -3493px;
+	}
+	76%
+	{
+		left: -3493px;
+	}
+	80%
+	{
+		left: -4610px;
+	}
+	96%
+	{
+		left: -4610x;
+	}
+	100%
+	{
+		left: -4610px;
+	}
+}
+ul
+{
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+	position: relative;
+	z-index: 99;
+}
+ul li
+{
+	float: left;
+	width: 200px;
+	height: 40px;
+	line-height: 20px;
+	text-align: center;
+	background: #e6e6e6;
+}
+#bar li a:hover
+{
+	background: #ccccff;
+}
+ul li ul li
+{
+	display: none;
+}
+ul li:hover ul li
+{
+	display: block;
+}
+#bar
+{
+	left: 70px;
+	cursor: pointer;
+	position: fixed;
+	top: 0px;
+}
+.button
+{
+	border-radius: 20px;
+	padding: 5px 15px 5px 15px;
+	background: #cccccc;
+	cursor: pointer;
+}
+
+
+
